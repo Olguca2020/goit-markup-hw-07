@@ -336,7 +336,7 @@ max-width: 768px;
          column-gap: 64px;
             }
       .team-item {
-         flex-basis: calc(100%-24px) / 2;
+         flex-basis: calc((100%-24px) / 2);
             }
             }
       @media screen and (min-width: 1440px) {
