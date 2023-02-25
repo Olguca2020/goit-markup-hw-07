@@ -29,18 +29,39 @@ button{
    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
    /* ======BODY====== */
-.section {
-   padding-bottom: 120px;
-   padding-top: 120px;
+
+   .section {
+   padding-bottom: 96px;
+   padding-top: 96px;
+   
+}
+@media screen and (min-width: 1200px) {
+   .section {
+      padding-bottom: 120px;
+      padding-top: 120px;
+      
+   }
 }
 body {
   font-family: Roboto, sans-serif;
   color: var(--color-slate);
 }
-.container{
-   width: 1158px;
-   padding: 0 15px;
-   margin: 0 auto;
+.container{  
+   max-width:428px;
+   padding-left: 16px;
+   padding-right: 16px;
+   margin-left: auto;
+   margin-right: auto;
+}
+@media screen and (min-width: 768px){
+.container {
+max-width: 768px;
+}
+}
+@media screen and (min-width: 1200px) {
+   .container {
+      max-width: 1158px;
+   }
 }
 /* ===== HEADER ===== */
 .header-item.current {color: var(--color-ocean);}
@@ -236,9 +257,21 @@ body {
      }
      /* =====DOING====== */
   
-     .doing.section {
-      
-     }
+        .doing.section {
+         display: none;
+        }
+     @media screen and (min-width: 768px) {
+         .doing.section {
+            display: none;
+           }
+        }
+   
+        @media screen and (min-width: 1440px) {
+         .doing.section {
+            display: block  ;
+           }
+        }
+    
   
      .doing-list {
       display: flex;
@@ -279,11 +312,12 @@ body {
      {
       background: var(--color-ocean)
      }
+     @media  screen and (min-width: 1440px) {      
      .team-list {
       display: flex;
       justify-content: space-between;
      }
-  
+   }
      .team-item {
       background:var(--color-whit);
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -291,8 +325,15 @@ body {
      }
   
      .team-img {
-      
+      margin-left: auto;
+      margin-right: auto;
      }
+        @media screen and (min-width: 1440px){
+         .team-img {
+               margin-left: none;
+               margin-right: none;
+            }
+        }
      .team-block{
       padding: 32px 16px;
      }
