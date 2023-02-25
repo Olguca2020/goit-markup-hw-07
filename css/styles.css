@@ -33,7 +33,7 @@ button{
    .section {
    padding-bottom: 96px;
    padding-top: 96px;
-   outline: 2px solid purple;
+   /* outline: 2px solid purple; */
    
 }
 @media screen and (min-width: 1200px) {
@@ -54,7 +54,7 @@ body {
    padding-right: 16px;
    margin-left: auto;
    margin-right: auto;
-   outline: 2px solid purple;
+   /* outline: 2px solid purple; */
 }
 @media screen and (min-width: 768px){
 .container {
@@ -180,10 +180,11 @@ max-width: 768px;
       align-items: center;
       }
    .contact-list { 
-      display: flex; 
+      display: block;
+      /* display: flex; 
       gap: 6px;
       flex-direction: column; 
-      justify-content: center;
+      justify-content: center; */
       }
    .header-contact {
       display: flex;
@@ -200,13 +201,13 @@ max-width: 768px;
             }
      @media screen and (min-width: 1200px){
       .contact-list {
-      flex-direction: row;
+         display: flex;      
         align-items: center;
-        justify-content: center;
+        
          }
       .contact-tel.link,
       .contact-mail.link
-      {  display: block;
+      { display: block;
          padding-bottom: 24px;
          padding-top: 24px;}
      }
@@ -398,12 +399,15 @@ max-width: 768px;
       @media screen and (min-width: 1440px) {
       .team-list {
          display: flex;
+         flex-wrap: nowrap;
+         row-gap: none;
+            column-gap: none;
          justify-content: space-between;
               }
       
-      .team-item:not(:last-child) {
+      /* .team-item:not(:last-child) {
          margin-bottom: 0;
-               }
+               } */
             }
      /* .team-img {
       margin-left: auto;
