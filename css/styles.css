@@ -171,7 +171,7 @@ max-width: 768px;
    padding: 0;
    margin-left: auto;
 }
-@media screen and (min-width: 760px){
+@media screen and (min-width: 768px){
    .header-menu-btn {
       display: none;      
    }
@@ -326,7 +326,7 @@ max-width: 768px;
            }
         }
          
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1200px) {
          .doing.section {
             display: block  ;
            }
@@ -400,7 +400,7 @@ max-width: 768px;
          margin-bottom: 0px;
                         }
             }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1200px) {
       .team-list {
          display: flex;
          flex-wrap: nowrap;
@@ -445,16 +445,31 @@ max-width: 768px;
      /* =========Customers======= */
      .customer-list{
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 24px;
+      gap: 16px;
      }
      .customers-icon{
       fill: var(--color-light-slate);
       transition: fill var(--transition);
      }
      .customer-item{
-           
+       flex-basis: calc((100% - 16px * 1) / 2); 
      }
+     @media screen and (min-width: 768px){
+      .customer-list {
+      gap: 24px;
+     }
+      .customer-item {
+       flex-basis: calc((100% - 24px * 2) / 3);
+        }
+      }
+      @media screen and (min-width: 1200px) {
+       .customer-list {
+            flex-wrap: nowrap;
+         }      
+       
+             }
      .customers-link {
          display: flex;
          justify-content: center;
