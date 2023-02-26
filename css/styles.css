@@ -568,6 +568,16 @@ align-items: baseline; */
 @media screen and (min-width:768px){
 .footer-container {
    flex-wrap: wrap;
+   flex-direction:row ;
+      align-items: center;
+      gap: 0px;
+}
+.fff{
+   flex-basis: calc((100%-24px * 1) / 2);
+}
+.user-form-subscribe{
+   flex-direction: row;
+   justify-content: space-between;
 }
 }
 .footer .sotial-link {
