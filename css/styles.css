@@ -280,8 +280,7 @@ max-width: 768px;
      }
   
      .about-item {
-      width: auto;
-      /* flex-basis: calc((100% - 3 * 24px) / 4); */
+      
      }
      .about-img{
       display: none;
@@ -307,7 +306,7 @@ max-width: 768px;
        row-gap: 72px;
          }
     .about-item{
-      flex-basis: calc(100% - 24px * 1) / 2;
+      flex-basis: calc((100% - 24px * 1) / 2);
           }
      }
    @media screen and (min-width: 1200px){
