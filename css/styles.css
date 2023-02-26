@@ -394,7 +394,11 @@ max-width: 768px;
             }
       .team-item {
          flex-basis: calc((100%-24px * 1) / 2);
+         margin-bottom: 0;
             }
+      .team-item:not(:last-child) {
+         margin-bottom: 0px;
+                        }
             }
       @media screen and (min-width: 1440px) {
       .team-list {
