@@ -581,7 +581,7 @@ align-items: baseline; */
    flex-wrap: wrap;
    flex-direction:row ;
       align-items: center;
-      gap: 0px;
+      gap: 24px;
 }
 .fff{
    flex-basis: calc((100%-24px * 1) / 2);
