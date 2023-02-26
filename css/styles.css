@@ -227,16 +227,27 @@ max-width: 768px;
       }
   
      .hero-title {   
-        width: 500px;              
+        /* width: 500px;*/
+      width: 320px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 48px;
-
-        font-size: 56px;
-        line-height: calc(60/56);
+        /* margin-bottom: 48px; */
+        margin-bottom: 72px;
+        /* font-size: 56px; */
+        /* line-height: calc(60/56); */
+      font-size: 36px;
+         line-height: calc(40/36);
         text-align: center;
         letter-spacing: 0.02em;      
         color:var(--color-whit) ;      
+     }
+     @media screen and (min-width:768px){
+      .hero-title{
+         width: 500px;
+         margin-bottom: 48px;
+         font-size: 56px;
+         line-height: calc(60/56);
+      }
      }
   
      .hero-btn { 
