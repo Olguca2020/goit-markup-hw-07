@@ -9,6 +9,8 @@ h1,h2,h3,h4,h5,p {
 }
 img{
 display: block;
+max-width: 100%;
+height: auto;
 }
 button{
    cursor: pointer
@@ -580,15 +582,41 @@ align-items: baseline; */
 .footer-container {
    flex-wrap: wrap;
    flex-direction:row ;
-      align-items: center;
-      gap: 24px;
-}
+   align-items: normal;
+   gap: 72px 24px;
+   justify-content: center;
+   }
+
 .fff{
    flex-basis: calc((100%-24px * 1) / 2);
 }
 .user-form-subscribe{
    flex-direction: row;
-   justify-content: space-between;
+   
+   gap: 24px;
+}
+.footer-form{
+  
+}
+.footer-form .footer-title {
+   text-align: left;
+}
+.footer-left{
+   align-items: normal;
+}
+.right{
+   align-items: normal;
+}
+}
+@media screen and (min-width: 1200px) {
+.footer-container{
+align-items: baseline;
+flex-wrap: nowrap;
+   flex-direction: row;
+   align-items: normal;
+   gap: 72px;
+   justify-content: center;
+   
 }
 }
 .footer .sotial-link {
