@@ -182,9 +182,9 @@ max-width: 768px;
       align-items: center;
       gap: 40px;
       }
-   .contact-list { 
+   .header-contact .contact-list { 
       display: block;
-     
+     min-width: 0px;
       /* display: flex; 
       gap: 6px;
       flex-direction: column; 
@@ -211,7 +211,7 @@ max-width: 768px;
       padding: 24px 0px;
                   }
       .header-container{
-       align-items: center;       
+       align-items: center;      
        
             }
       .menu-item:not(:last-child) {
@@ -221,9 +221,9 @@ max-width: 768px;
                margin-right: 76px;}
             }
      @media screen and (min-width: 1200px){
-      .contact-list {
+      .header-contact .contact-list {
          display: flex;      
-        align-items: center;        
+        align-items: center;                
          }
                   
       .contact-tel.link,
@@ -247,9 +247,9 @@ max-width: 768px;
       text-align: center;
       padding-top: 112px;
       /* padding-top: 180px ; */
-      padding-bottom: 180px;
+      padding-bottom: 112px;
       background-color: rgba(46, 47, 66, 0.7);
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_mobile@1x.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/s_people-office_mobile@1x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -260,36 +260,36 @@ max-width: 768px;
             (min-resolution: 192dpi),
             (min-resolution: 2dppx){
             .hero{
-            background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_mobile@2x.jpg);
+            background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/s_people-office_mobile@2x.jpg);
             }
             }
       @media screen and (min-width:428px) {
       .hero{
-      background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_tablet@1x.jpg);
+      background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/s_people-office_tablet@1x.jpg);
       }
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                .hero {
-                  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_tablet@2x.jpg);
+                  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/s_people-office_tablet@2x.jpg);
                }
             }
       }
       @media screen and (min-width:768px) {
       .hero{
-      background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ _desctop@1x.jpg);
+      background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/s_people-office\ _desctop@1x.jpg);
       }
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                .hero {
-                  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ _desctop@2x.jpg);
+                  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/s_people-office\ _desctop@2x.jpg);
                }
             }
       }
      .hero-title {   
         /* width: 500px;*/
-      width: 320px;
+      /* : 320px;-moz-text-align-last */
         margin-left: auto;
         margin-right: auto;
         /* margin-bottom: 48px; */
@@ -305,7 +305,7 @@ max-width: 768px;
      @media screen and (min-width:768px){
       .hero{
       padding-top: 180px;
-        
+      padding-bottom: 180px;
       }
       .hero-title{
          width: 500px;
@@ -341,10 +341,7 @@ max-width: 768px;
         }
      /* =====ABOUT===== */
   
-     .about-section {
-      margin-bottom: 0;
-      margin-top: 112px;
-     }
+     
     .about-icon{
     
   }
@@ -484,16 +481,23 @@ max-width: 768px;
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
       border-radius: 0px 0px 4px 4px;
       max-width: 260px;
-      margin-left: auto;
-      margin-right: auto;
+      /* margin-left: auto;
+      margin-right: auto; */
       
      }
-      .team-item:not(:last-child){
+      /* .team-item:not(:last-child){
          margin-bottom: 72px;
-      }
+      } */
+            .team-list {
+               display: flex;
+               flex-wrap: wrap;
+           justify-content:  center;
+           gap: 72px;
+
+            }
       @media screen and (min-width: 768px) {
       .team-list {
-         display: flex;
+         
          flex-wrap: wrap;
          row-gap: 24px;
          column-gap: auto;
@@ -508,10 +512,10 @@ max-width: 768px;
             }
       @media screen and (min-width: 1200px) {
       .team-list {
-         display: flex;
+         
          flex-wrap: nowrap;
-         row-gap: none;
-            column-gap: none;
+         row-gap: 64px;
+            column-gap: 24px;
          justify-content: space-between;
               }
             }
@@ -677,7 +681,7 @@ align-items: baseline;
 flex-wrap: nowrap;
    flex-direction: row;
    align-items: normal;
-   gap: 72px;
+   gap: inherit;
      
 }
 .footer-form {
@@ -841,16 +845,22 @@ transform: translate(0, 0);
    top: 50%;
    left: 50%;
    /* transform: translate(-50%, -50%); */
-   width: 408px;
+   max-width: 408px;
+   min-width: 290px;
    min-height: 456px;
    background: #FCFCFC;
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
    transform: translate(-50%, -50%) scale(1);
    transition: transform var(--transition);
+   padding: 72px 16px 16px 16px;
+   /* padding: 72px 40px 40px 40px; */
+}
+@media screen  and (min-width:768px){
+.modal{
    padding: 72px 40px 40px 40px;
 }
-
+}
 .modal-btn {
    display: flex;   
    justify-content: center;
@@ -1114,6 +1124,7 @@ display: flex;
    left: 0;
    width: 100vw;
    height: 100vh;
+   
    padding: 78px 35px 40px 40px;
    background-color: var(--color-whit);
    z-index: 999;
